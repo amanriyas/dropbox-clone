@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:push": "drizzle-kit push",
+    "db:stub": "drizzle-kit generate",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate" : "tsx ./lib/db/migrate.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
@@ -14,10 +18,8 @@
     "drizzle-orm": "^0.44.4",
     "next": "15.4.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "db:push": "drizzle-kit push",
-    "db:stub": "drizzle-kit generate",
-    "db:generate": "drizzle-kit generate"
+    "react-dom": "19.1.0"
+    
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
