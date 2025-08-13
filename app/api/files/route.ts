@@ -35,6 +35,9 @@ export  async function GET( request : NextRequest ){
                 and(eq(files.userID, userId), isNull(files.parentId))
             )
 
+
+            // Fetch files without a parentId
+
         }
         return NextResponse
 
